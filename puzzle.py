@@ -1,3 +1,8 @@
+# Set variables
+row = 0
+idx = 0
+result = 1
+
 triangle = [
     [2],
     [4, 3],
