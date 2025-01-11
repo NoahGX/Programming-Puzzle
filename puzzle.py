@@ -4,6 +4,12 @@ def triangle_path(pyramid, row, idx, target, product, path):
 
     # If the last row is reached, check if target is met
     if row == len(triangle - 1):
+        return path  # valid path found
+    else:
+        return None  # no path found
+    
+    left = triangle_path(triangle, target, row+1, idx, product, path+"L")
+    right = triangle_path(triangle, target, row+1, idx+1, product, path+"R")
 
 # Traingle pyramid
 triangle = [
