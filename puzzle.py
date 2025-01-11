@@ -8,6 +8,9 @@ def triangle_path(pyramid, row, idx, target, product, path):
             return path  # valid path found
         else:
             return None  # no path found
+    
+    left = triangle_path(triangle, target, row+1, idx, product, path+"L")
+    right = triangle_path(triangle, target, row+1, idx+1, product, path+"R")
 
 # Traingle pyramid
 triangle = [
