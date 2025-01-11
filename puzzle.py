@@ -3,6 +3,7 @@ row = 0
 idx = 0
 result = 1
 
+# Traingle pyramid
 triangle = [
     [2],
     [4, 3],
