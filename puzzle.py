@@ -1,5 +1,8 @@
 def triangle_path(pyramid, row, idx, target, product, path):
+    # Multiply running product by the current cell value
     product *= pyramid[row][idx]
+
+    # If the last row is reached, check if target is met
     if row == len(triangle - 1):
         if product == target:
             return path
