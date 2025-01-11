@@ -17,6 +17,6 @@ Left = triangle[row + 1][idx]  # left is next row, same index
 Right = triangle[row + 1][idx + 1]  # right is next row, next index
 
 for row in triangle:
-    for num in row:
-        print(num, end=' ')
+    for idx in row:
+        print(result, path=' ')
     print()
