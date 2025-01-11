@@ -1,7 +1,10 @@
-# Set variables
-row = 0
-idx = 0
-result = 1
+def triangle_path(pyramid, row, idx, target, product, path):
+    product *= pyramid[row][idx]
+    if row == len(triangle - 1):
+        if product == target:
+            return path
+    else:
+        return None
 
 # Traingle pyramid
 triangle = [
@@ -15,6 +18,10 @@ triangle = [
 result *= triangle[row][idx]
 Left = triangle[row + 1][idx]  # left is next row, same index
 Right = triangle[row + 1][idx + 1]  # right is next row, next index
+
+product = 0
+path = ""
+target = -1
 
 for row in triangle:
     for idx in row:
