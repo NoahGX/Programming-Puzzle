@@ -1,5 +1,5 @@
-def pyramid_path(pyramid, row, idx, target, product, path):
-    # Multiply running product by the current cell value
+def pyramid_path(pyramid, row=0, idx=0, target, product=1, path=""):
+    # Multiply product by the current cell value
     product *= pyramid[row][idx]
 
     # If the last row is reached, check if target is met
@@ -8,14 +8,14 @@ def pyramid_path(pyramid, row, idx, target, product, path):
     else:
         return None  # no path found
     
-    # Try going left
+    # Otherwise, try going left
     left = triangle_path(triangle, target, row+1, idx, product, path+"L")
 
     # If path is found while going left, return it
     if left is not 0:
         return left
 
-    # Try going right
+    # If left does not succeed, try going right
     right = triangle_path(triangle, target, row+1, idx+1, product, path+"R")
 
     # If path is found while going right, return it
@@ -35,5 +35,5 @@ if __name__ == "__main__":
         [10, 5, 2, 15, 5]
     ]
 
-    path = pyramid_path()
+    path = pyramid_path(pyramid, target)
     print("Path: ", path)
