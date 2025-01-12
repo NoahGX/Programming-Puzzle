@@ -9,14 +9,14 @@ def pyramid_path(pyramid, target, row=0, idx=0, product=1, path=""):
         return None  # no path found
     
     # Otherwise, try going left
-    left = triangle_path(triangle, target, row+1, idx, product, path+"L")
+    left = pyramid_path(pyramid, target, row+1, idx, product, path+"L")
 
     # If path is found while going left, return it
     if left is not None:
         return left
 
     # If left does not succeed, try going right
-    right = triangle_path(triangle, target, row+1, idx+1, product, path+"R")
+    right = pyramid_path(pyramid, target, row+1, idx+1, product, path+"R")
 
     # If path is found while going right, return it
     return right
