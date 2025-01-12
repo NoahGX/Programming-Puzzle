@@ -4,7 +4,7 @@ def pyramid_path(pyramid, target, row=0, idx=0, product=1, path=""):
 
     # If the last row is reached, check if target is met
     if row == len(pyramid) - 1:
-        return path  # valid path found
+        return path if product == target else None
     
     # Otherwise, try going left
     left = pyramid_path(pyramid, target, row+1, idx, product, path+"L")
