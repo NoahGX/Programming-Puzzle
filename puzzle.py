@@ -22,7 +22,7 @@ def pyramid_path(pyramid, row, idx, target, product, path):
     return right
 
 # Main function
-if __name__ = "__main__":
+if __name__ == "__main__":
     # Set the target
     target = 720
     
