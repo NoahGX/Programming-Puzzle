@@ -40,3 +40,6 @@ def main():
         print("Path:", path_solution)
     else: 
         print("No valid path found for the target:", target)
+
+if __name__ == "__main__":
+    main()
