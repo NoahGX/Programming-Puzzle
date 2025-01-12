@@ -32,20 +32,11 @@ def main():
         row_values = [int(x) for x in line.split(",")]
         pyramid.append(row_values)
 
+    # Solve the puzzle
+    path_solution = pyramid_path(pyramid, target)
 
-# Main function
-if __name__ == "__main__":
-    # Set the target
-    target = 720
-    
-    # Set the pyramid
-    pyramid = [
-        [2],
-        [4, 3],
-        [3, 2, 6],
-        [2, 9, 5, 2],
-        [10, 5, 2, 15, 5]
-    ]
-
-    path = pyramid_path(pyramid, target)
-    print("Path: ", path)
+    # Print the result
+    if solution is not None:
+        print("Path:", path_solution)
+    else: 
+        print("No valid path found for the target:", target)
