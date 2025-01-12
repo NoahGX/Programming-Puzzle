@@ -29,7 +29,8 @@ def main():
     for line in lines[1:]:
         # Split by comma, convert each element to int
         # If there's only one element (e.g. '2'), it becomes [2]
-        row_values = 
+        row_values = [int(x) for x in line.split(",")]
+        pyramid.append(row_values)
 
 
 # Main function
