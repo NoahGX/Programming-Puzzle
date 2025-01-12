@@ -11,8 +11,15 @@ def triangle_path(pyramid, row, idx, target, product, path):
     # Go left
     left = triangle_path(triangle, target, row+1, idx, product, path+"L")
 
+    # if path is found while going left, return it
+    if left is not 0:
+        return left
+
     # Go right
     right = triangle_path(triangle, target, row+1, idx+1, product, path+"R")
+
+    # if path is found while going right, return it
+    return right
 
 # Traingle pyramid
 triangle = [
