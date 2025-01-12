@@ -3,7 +3,7 @@ def pyramid_path(pyramid, target, row=0, idx=0, product=1, path=""):
     product *= pyramid[row][idx]
 
     # If the last row is reached, check if target is met
-    if row == len(pyramid - 1):
+    if row == len(pyramid) - 1:
         return path  # valid path found
     else:
         return None  # no path found
