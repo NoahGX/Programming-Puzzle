@@ -1,4 +1,4 @@
-def pyramid_path(pyramid, row=0, idx=0, target, product=1, path=""):
+def pyramid_path(pyramid, target, row=0, idx=0, product=1, path=""):
     # Multiply product by the current cell value
     product *= pyramid[row][idx]
 
