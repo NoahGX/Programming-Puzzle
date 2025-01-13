@@ -33,13 +33,10 @@ def main():
         pyramid.append(row_values)
 
     # Solve the puzzle
-    path_solution = pyramid_path(pyramid, target)
+    solution = pyramid_path(pyramid, target)
 
-    # Print the result
-    if path_solution is not None:
-        print("Path:", path_solution)
-    else: 
-        print("No valid path found for the target:", target)
+    # Write the solution to the output file
+    output_path = "data/outputs/pyramid_solution.txt"
 
 if __name__ == "__main__":
     main()
