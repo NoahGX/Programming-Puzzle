@@ -36,7 +36,7 @@ def main():
     path_solution = pyramid_path(pyramid, target)
 
     # Print the result
-    if solution is not None:
+    if path_solution is not None:
         print("Path:", path_solution)
     else: 
         print("No valid path found for the target:", target)
