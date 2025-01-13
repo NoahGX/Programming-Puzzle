@@ -36,7 +36,7 @@ def main():
     solution = pyramid_path(pyramid, target)
 
     # Write the solution to the output file
-    output_path = "data/outputs/pyramid_solution.txt"
+    output_path = "../data/outputs/pyramid_solution.txt"
     with open(output_path, "w") as output:
         if solution is not None:
             output.write(f"Path: {solution}\n")
