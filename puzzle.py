@@ -17,7 +17,7 @@ def pyramid_path(pyramid, target, row=0, idx=0, product=1, path=""):
 
 def main():
     # Read the file
-    with open("pyramid_sample_input.txt", "r") as f:
+    with open("pyramid_input.txt", "r") as f:
         lines = [line.strip() for line in f.readlines()]
 
     # Parse the target on first line
