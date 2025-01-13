@@ -37,6 +37,12 @@ def main():
 
     # Write the solution to the output file
     output_path = "data/outputs/pyramid_solution.txt"
+    with open(output_path, "w") as output:
+        if solution is not None:
+            output.write(f"Path: {solution}\n")
+        else:
+            output.write(f"No valid path round for target = {target}\n")
+    print(f"Solution written to {output}")
 
 if __name__ == "__main__":
     main()
