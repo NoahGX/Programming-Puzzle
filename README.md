@@ -2,6 +2,8 @@
 
 ## Overview
 Returns a path of 'L'/'R' from top to bottom whose product equals 'target', or None if no valid path exists.
+
+## Features
 - **param pyramid**: List of lists of integers (the pyramid)
 - **param target**:  The target product to find
 - **param row**:     Current row in the pyramid (for recursive calls)
