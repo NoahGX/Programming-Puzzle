@@ -1,7 +1,7 @@
 # Programming Puzzle
 
 ## Overview
-Returns a path of 'L'/'R' from top to bottom whose product equals 'target', or None if no valid path exists.
+This is a simple programming puzzle using Python that returns a path of 'L'/'R' from top to bottom whose product equals 'target', or None if no valid path exists.
 
 ## Features
 - **param pyramid**: List of lists of integers (the pyramid)
