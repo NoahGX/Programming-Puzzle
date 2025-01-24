@@ -14,3 +14,4 @@ This is a simple programming puzzle using Python that returns a path of 'L'/'R' 
 
 ## Prerequisites
 - Python 3.x
+- Visual Studio Code (or any IDE)
