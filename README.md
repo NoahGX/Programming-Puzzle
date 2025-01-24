@@ -11,3 +11,6 @@ Returns a path of 'L'/'R' from top to bottom whose product equals 'target', or N
 - **param product**: Current product of all numbers in the path so far
 - **param path**:    Path string built so far ('L' and 'R')
 - **return**:        A string of moves like 'LRLL' if found, else None
+
+## Prerequisites
+- Python 3.x
